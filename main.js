@@ -679,10 +679,7 @@ function clickCell(key, val){
   numEl.textContent=val; numEl.className='cell-num'+(MASTER(val)?' master':'');
   document.getElementById('cell-arch').textContent=data.n||'';
 
-  /* keywords for this position */
-  const kwKey = 'kws_'+key;
-  const kws = data[kwKey]||[];
-  document.getElementById('cell-keywords').innerHTML = kws.map(k=>`<span class="ckw">${k}</span>`).join('');
+  document.getElementById('cell-keywords').innerHTML = '';
 
   /* body — role-specific description */
   const bodyKey = 'body_'+key;
