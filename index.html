@@ -33,7 +33,7 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         <span class="ig-lbl">@julio_sandv</span>
       </a>
-      <a href="https://wa.me/523314189814?text=Hola%20Julio%2C%20quiero%20agendar%20una%20sesi%C3%B3n" target="_blank" class="nav-cta">Agendar →</a>
+      <a href="#servicios" class="nav-cta">Agendar →</a>
     </div>
   </div>
 </nav>
@@ -74,7 +74,7 @@
   <p class="hero-sub r d2">Hay un patrón detrás. No es mala suerte ni falta de fuerza de voluntad — es una dinámica que tiene nombre y que se puede trabajar.</p>
   <div class="hero-actions r d3">
     <a href="#tu-mapa" class="btn bd">Descubre tu mapa →</a>
-    <a href="https://wa.me/523314189814?text=Hola%20Julio%2C%20quiero%20agendar" target="_blank" class="btn bg">Agenda sesión</a>
+    <a href="#servicios" class="btn bg">Agenda sesión</a>
   </div>
   <div class="hero-trust r d3">
     <div class="stars">
@@ -268,11 +268,7 @@
           <a id="res-wa" href="#" target="_blank" class="btn bsage"><svg class="wi" viewBox="0 0 24 24"><path d="M20.52 3.449A11.93 11.93 0 0 0 12.042.006C5.464.006.112 5.36.11 11.94c-.001 2.103.549 4.155 1.595 5.963L.002 24l6.265-1.644a11.955 11.955 0 0 0 5.771 1.471h.005c6.576 0 11.929-5.354 11.932-11.934a11.883 11.883 0 0 0-3.455-8.444zM12.04 21.593a9.92 9.92 0 0 1-5.058-1.383l-.362-.216-3.759.985 1.003-3.664-.236-.375a9.893 9.893 0 0 1-1.516-5.28c.002-5.47 4.454-9.921 9.928-9.921a9.866 9.866 0 0 1 7.017 2.906 9.856 9.856 0 0 1 2.9 7.018c-.002 5.472-4.454 9.93-9.917 9.93zm5.443-7.428c-.298-.15-1.767-.871-2.04-.969-.273-.1-.472-.149-.671.15-.198.298-.77.969-.944 1.168-.173.198-.347.223-.645.074a8.12 8.12 0 0 1-2.388-1.474 8.955 8.955 0 0 1-1.652-2.058c-.173-.298-.018-.459.13-.607.133-.133.298-.347.447-.52.15-.173.199-.298.299-.497.099-.198.05-.372-.025-.52-.075-.15-.671-1.617-.919-2.215-.242-.58-.488-.502-.671-.511l-.572-.01c-.198 0-.52.074-.792.373-.273.298-1.04 1.017-1.04 2.48s1.065 2.876 1.213 3.075c.149.198 2.096 3.2 5.078 4.487.71.306 1.263.489 1.695.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>Quiero lectura completa</a>
           <button onclick="resetTool()" class="btn bgd">Nueva consulta</button>
         </div>
-        <div class="optin-wrap">
-          <p class="optin-q">¿Quieres recibir tu lectura completa por escrito?</p>
-          <div class="optin-row"><input type="email" placeholder="tu@email.com" id="optin-email"/><button onclick="doOptin()">→</button></div>
-          <p class="optin-ok" id="optin-ok">✓ Perfecto, te escribo pronto.</p>
-        </div>
+
       </div>
     </div>
   </div>
@@ -379,19 +375,7 @@
   </div>
 </section>
 
-<!-- CAPTURE -->
-<section class="capture">
-  <div class="cap-in r">
-    <span class="eyebrow"><span class="dot"></span> Lista</span>
-    <div class="cap-title">¿No estás listo todavía?</div>
-    <p class="cap-sub">Déjame tu email y te aviso cuando haya lugar disponible.</p>
-    <form class="cap-form" onsubmit="saveEmail(event)">
-      <input type="email" placeholder="tu@email.com" id="cap-email" required/>
-      <button type="submit">Avisar →</button>
-    </form>
-    <p class="cap-ok" id="cap-ok">✓ Anotado.</p>
-  </div>
-</section>
+
 
 <!-- CTA FINAL -->
 <section class="ctaf">
@@ -436,7 +420,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/523314189814?text=Hola%20Julio%2C%20quiero%20agendar" target="_blank" class="stk" id="stk">Agendar sesión →</a>
+<a href="#servicios" class="stk" id="stk">Agendar sesión →</a>
 <form name="brujula-optin" netlify netlify-honeypot="bot-field" class="hnf"><input name="bot-field"/><input name="email" type="email"/><input name="resultado"/></form>
 <form name="brujula-lista" netlify netlify-honeypot="bot-field" class="hnf"><input name="bot-field"/><input name="email" type="email"/></form>
 

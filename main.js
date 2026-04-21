@@ -19,12 +19,13 @@ window.addEventListener('scroll',()=>document.getElementById('stk').classList.to
 
 /* ═══ NUMEROLOGY CALCS ═══ */
 function calcQuad(d, mo, y){
-  const alma  = red(d<10 ? d : sumA(digs(d)), true);
-  const ego   = red(mo<10 ? mo : sumA(digs(mo)), true);
-  const don   = (()=>{ const l=y%100; return red(l<10?l:sumA(digs(l)),true); })();
-  const karma = red(sumA(digs(y)), true);
+  const alma  = MASTER(d) ? d : red(d<10 ? d : sumA(digs(d)), true);
+  const ego   = MASTER(mo) ? mo : red(mo<10 ? mo : sumA(digs(mo)), true);
+  const don   = (()=>{ const l=y%100; return MASTER(l) ? l : red(l<10?l:sumA(digs(l)),true); })();
+  const karma = (()=>{ const s=sumA(digs(y)); return MASTER(s) ? s : red(s, true); })();
   const all   = `${String(d).padStart(2,'0')}${String(mo).padStart(2,'0')}${y}`;
-  const mision= red(sumA(all.split('').map(Number)), true);
+  const rawMis= sumA(all.split('').map(Number));
+  const mision= MASTER(rawMis) ? rawMis : red(rawMis, true);
   return {alma, ego, don, karma, mision};
 }
 
@@ -742,7 +743,7 @@ function calcAll(){
     document.getElementById('arc-eye').textContent=`Tu arcano del año ${yearUsed}`;
     document.getElementById('arc-title').textContent=arcNm;
     document.getElementById('arc-num').textContent=`Arcano ${arc}`;
-    document.getElementById('arc-body').innerHTML=arcData.body+`<div class="arc-kw">${(arcData.kw||[]).map(k=>`<span class="arc-kw-tag">${k}</span>`).join('')}</div>`;
+    document.getElementById('arc-body').innerHTML=arcData.body;
 
     /* quad */
     renderQuad(q);
@@ -759,6 +760,7 @@ function calcAll(){
 
     document.getElementById('ldr').classList.remove('on');
     document.getElementById('result').classList.add('vis');
+    setTimeout(()=>document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'}),50);
   },1700);
 }
 
@@ -772,6 +774,7 @@ function resetTool(){
   saveDate(''); saveName('');
   document.getElementById('saved-badge').classList.remove('vis');
   _lastQuad=null; _activeCell=null;
+  setTimeout(()=>document.getElementById('tool-form').scrollIntoView({behavior:'smooth',block:'start'}),50);
 }
 
 /* ═══ SHARE ═══ */
