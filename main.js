@@ -56,17 +56,10 @@ function calcExprNum(name){
 }
 
 /* ═══ ARCANO NAMES ═══ */
-const AN = {0:'El Loco',1:'El Mago',2:'La Sacerdotisa',3:'La Emperatriz',4:'El Emperador',5:'El Sumo Sacerdote',6:'Los Enamorados',7:'El Carro',8:'La Justicia',9:'El Ermitaño',10:'La Rueda de la Fortuna',11:'La Fuerza',12:'El Colgado',13:'La Muerte',14:'La Templanza',15:'El Diablo',16:'La Torre',17:'La Estrella',18:'La Luna',19:'El Sol',20:'El Juicio',21:'El Mundo',22:'El Loco'};
+const AN = {1:'El Mago',2:'La Sacerdotisa',3:'La Emperatriz',4:'El Emperador',5:'El Sumo Sacerdote',6:'Los Enamorados',7:'El Carro',8:'La Justicia',9:'El Ermitaño',10:'La Rueda de la Fortuna',11:'La Fuerza',12:'El Colgado',13:'La Muerte',14:'La Templanza',15:'El Diablo',16:'La Torre',17:'La Estrella',18:'La Luna',19:'El Sol',20:'El Juicio',21:'El Mundo',22:'El Loco'};
 
 /* ═══ ARCANO DATA — rich descriptions + keywords + mision cross ═══ */
 const ARCANOS = {
-  0: {
-    kw: ['Umbral','Salto al vacío','Inicio','Libertad','Ruptura','Riesgo','Presente'],
-    body: `<p>El Loco no es el que no sabe — es el que sabe y da el paso de todas formas. Este es el año en que algo termina definitivamente y algo nuevo comienza, aunque todavía no tenga nombre ni forma. La sensación de estar entre dos mundos no es señal de que algo está mal — es exactamente lo que tiene que sentirse cuando se cruza un umbral real.</p>
-<p><strong>Este año te pide que sueltes la necesidad de saber a dónde llegas antes de empezar a caminar.</strong> El mapa se hace en el camino. Lo que parecía seguro puede que ya no lo sea — y eso no es una pérdida, es espacio.</p>
-<p>La trampa del año del Loco es paralizarse buscando garantías que no van a llegar. El momento perfecto para empezar no existe — existe este momento y la decisión de usarlo.</p>`,
-    cross: (mn,mn_n) => `Este año, la energía del Loco activa directamente tu <em>Misión de ${mn_n} (${mn})</em>. Hay algo en lo que viniste a aprender que este año exige que des el salto sin red. El patrón que más frena a las personas con tu misión es esperar estar listas — y este arcano te dice exactamente lo contrario.`
-  },
   1: {
     kw: ['Voluntad','Inicio','Herramientas','Decisión','Poder personal','Claridad','Acción'],
     body: `<p>El Mago tiene todo lo que necesita. El año del Mago no es el año de prepararse — es el año de usar lo que ya tienes. Tienes más recursos de los que reconoces. El obstáculo no es la falta de capacidad: es la decisión de actuar con lo que ya está en tus manos.</p>
