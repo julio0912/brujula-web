@@ -158,15 +158,16 @@ h1.hero-h em{font-style:italic;color:var(--sage)}
 
 /* QUAD */
 .quad-section{padding:22px 28px;border-top:1px solid var(--dark-line)}
-.quad-hint{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);margin-bottom:14px;display:flex;align-items:center;gap:7px;font-weight:500}
+.quad-hint{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--sage);margin-bottom:14px;display:flex;align-items:center;gap:8px;font-weight:600;animation:pulseHint 2.5s ease-in-out infinite;}
+@keyframes pulseHint{0%,100%{opacity:1}50%{opacity:.55}}
 .quad-hint::before{content:'◆';font-size:9px}
 /* Layout: 2x2 LEFT + mission RIGHT */
 .quad-wrap{display:flex;gap:1px;background:var(--dark-line)}
 .quad-2x2{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1px;background:var(--dark-line);flex:1}
-.quad-mis{display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--dark-card);padding:20px 16px;cursor:pointer;transition:all .16s;min-width:120px;border-left:2px solid var(--dark-line);text-align:center;position:relative}
+.quad-mis{display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--dark-card);padding:20px 16px;cursor:pointer;transition:all .16s;min-width:120px;border-left:2px solid var(--dark-line);text-align:center;box-shadow:inset 0 0 0 1px rgba(107,125,82,.2);position:relative}
 .quad-mis::before{content:'✦';position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--sage);opacity:.4}
 .quad-mis:hover,.quad-mis.active{background:rgba(107,125,82,.14);border-left-color:var(--sage)}
-.qcell{background:var(--dark-card);padding:16px 8px;text-align:center;cursor:pointer;transition:all .16s;border-bottom:2px solid transparent;position:relative;overflow:hidden}
+.qcell{background:var(--dark-card);padding:16px 8px;text-align:center;cursor:pointer;transition:all .16s;border-bottom:2px solid transparent;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(107,125,82,.15);}
 .qcell::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(107,125,82,.07) 0%,transparent 70%);opacity:0;transition:opacity .2s}
 .qcell:hover::after,.qcell.active::after{opacity:1}
 .qcell:hover,.qcell.active{border-bottom-color:var(--sage)}
