@@ -662,7 +662,7 @@ function renderQuad(q){
         <div class="qcell" id="qd" onclick="clickCell('don',${q.don})">
           <span class="qv${M(q.don)}">${q.don}</span>
           <span class="qn">Don<br/>Divino</span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMEROo</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
         </div>
         <div class="qcell" id="qe" onclick="clickCell('ego',${q.ego})">
           <span class="qv${M(q.ego)}">${q.ego}</span>
