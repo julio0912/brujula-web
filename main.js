@@ -224,6 +224,33 @@ const ARCANOS = {
 };
 
 /* ═══ NUMBER DATA ═══ */
+ND[0] = {n:'El Umbral',sym:'○',
+  kws_mision:['Potencial puro','Entre dos mundos','Inicio absoluto','Vacío fértil','Todo es posible'],
+  kws_alma:['Esencia sin forma','Origen','Silencio creador','Presencia sin definición','Lo que aún no es'],
+  kws_ego:['Misterio proyectado','Presencia indefinible','Imagen que cambia','Difícil de categorizar','Fluido'],
+  kws_don:['Adaptarse a cualquier forma','Contener multitudes','Empezar desde cero sin miedo','Potencial sin límite','Apertura total'],
+  kws_karma:['Identidad sin ancla','Vacío sin dirección','Potencial sin materializar','Dispersión heredada','El que no termina de llegar'],
+  luz_mision:'Cuando operas desde esta misión con consciencia, tienes acceso a una apertura y una flexibilidad que muy pocas personas tienen. Puedes entrar a cualquier espacio, adaptarte a cualquier contexto y comenzar desde cero sin el peso que otros cargan. Eso es un recurso real y escaso.',
+  luz_alma:'Tu esencia más profunda tiene una cualidad de origen — algo en ti no termina de cristalizarse en una sola forma porque contiene demasiadas posibilidades. Eso que sientes como indefinición es en realidad potencial puro.',
+  luz_ego:'Lo que proyectas es difícil de categorizar — y eso no es un defecto. Las personas que más te admiran son las que se quedan tiempo suficiente para ver todo lo que hay.',
+  luz_don:'Tu talento más natural es la apertura total: entrar sin prejuicios, empezar sin miedo, contenerte en formas que otros no pueden.',
+  luz_karma:'Cuando trabajas este karma, la libertad que ejerces es la más completa — la que no huye de nada sino que elige conscientemente dónde colocarse.',
+  neg_mision:'El patrón que más frena esta misión: la dificultad para tomar forma. El potencial que nunca aterriza porque siempre hay otra posibilidad abierta. La identidad que cambia tanto que no deja huella.',
+  neg_alma:'Cuando esta energía no está integrada: la sensación de no saber bien quién eres. La tendencia a ser lo que el entorno o las personas necesitan, perdiendo el hilo propio.',
+  neg_ego:'La imagen fluida puede generar la experiencia de que nadie te conoce de verdad — porque cada persona tiene una versión diferente de ti y ninguna es completa.',
+  neg_don:'El riesgo de este talento es quedarse en el potencial sin materializar nada. La apertura que nunca se cierra en algo concreto.',
+  neg_karma:'Sin trabajar: la sensación de estar siempre empezando, nunca llegando. El ciclo de inicios sin cierres que deja una inquietud de fondo.',
+  body_mision:'Viniste a aprender a tomar forma sin perder la libertad — a materializarte sin cerrarte. El desafío central de esta misión es que con tanto potencial disponible, elegir una dirección se siente como perder las demás.',
+  body_alma:'Tu esencia más profunda tiene una cualidad de origen y apertura. Antes de cualquier forma, antes de cualquier definición — hay algo en ti que contiene todo lo que podría ser.',
+  body_ego:'Lo que proyectas es difícil de categorizar. Eso puede sentirse como una desventaja — hasta que encuentras entornos donde esa fluidez es exactamente lo que se necesita.',
+  body_don:'El talento con el que llegaste es la apertura absoluta: empezar desde cero sin el peso del pasado, entrar en cualquier contexto sin resistencia.',
+  body_karma:'Traes patrones de identidad sin ancla o de potencial que nunca termina de materializarse. El aprendizaje es elegir una dirección sin sentir que pierdes todo lo demás.',
+  kws_person_mision:['Potencial por materializar','Apertura consciente','Inicio real','Forma elegida','Libertad con dirección'],
+  kws_person_alma:['Esencia fluida','Origen puro','Presencia sin límite','Contenedor de posibilidades','Lo que todavía puede ser'],
+  kws_person_ego:['Imagen cambiante','Difícil de categorizar','Fluido y adaptable','Muchas caras reales','Misterio genuino'],
+  kws_person_don:['Apertura total','Empezar sin miedo','Adaptarse a cualquier forma','Potencial real','Presencia sin prejuicios'],
+  kws_person_karma:['Identidad en proceso','Materializar pendiente','Potencial por aterrizar','Forma por elegir','Dirección en construcción']
+};
 const ARCH_SYM = {1:'♂',2:'☽',3:'♃',4:'♄',5:'☿',6:'♀',7:'⊕',8:'♈',9:'♆',11:'☿',22:'♄',33:'♃',44:'♂'};
 
 const ND = {
