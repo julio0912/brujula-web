@@ -175,7 +175,7 @@ h1.hero-h em{font-style:italic;color:var(--sage)}
 .quad-mis .qv{font-size:clamp(38px,4.5vw,54px)}
 .qcell .qv{font-size:clamp(26px,3vw,38px)}
 .qv.master{color:var(--rust)}
-.qn{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--dark-muted);line-height:1.4;display:block;position:relative;z-index:1}
+.qn{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:var(--dark-muted);line-height:1.4;display:block;position:relative;z-index:1}
 .quad-mis .qn em{display:block;color:rgba(107,125,82,.7);font-style:normal;font-size:7px;margin-top:4px;letter-spacing:.5px}
 @media(max-width:380px){
   .quad-wrap{flex-direction:column}
