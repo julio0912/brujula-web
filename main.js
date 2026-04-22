@@ -677,7 +677,7 @@ function renderQuad(q){
       </div>
       <div class="quad-mis" id="qm" onclick="clickCell('mision',${q.mision})">
         <span class="qv${M(q.mision)}">${q.mision}</span>
-        <span class="qn">Misión<br/>de Vida<em>Toca para explorar</em></span>
+        <span class="qn">Misión<br/>de Vida<em></span>
 <span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.4px">TOCA EL NÚMERO</span>
       </div>
     </div>`;
