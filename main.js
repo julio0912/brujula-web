@@ -31,22 +31,20 @@ function calcQuad(d, mo, y){
 
 /* Arcano del año — fix: if birthday hasn't passed yet this year, use previous year */
 function calcArcano(d, mo, fechaVal){
-  const {y: birthY} = pd(fechaVal);
   const today = new Date();
   const todayYear = today.getFullYear();
-  const todayMonth = today.getMonth()+1; // 1-based
+  const todayMonth = today.getMonth()+1;
   const todayDay = today.getDate();
 
-  // has birthday passed this year?
   let yearToUse = todayYear;
   if(mo > todayMonth || (mo === todayMonth && d > todayDay)){
     yearToUse = todayYear - 1;
   }
 
-  const raw = sumA(digs(d)) + sumA(digs(mo)) + sumA(digs(yearToUse));
-  let arc = red(raw, true);
-  if(arc === 0) arc = 22;
-  return { arc, yearUsed: todayYear }; // always display current year in label
+  let n = sumA(digs(d)) + sumA(digs(mo)) + sumA(digs(yearToUse));
+  while(n > 22){ n = sumA(digs(n)); }
+  if(n === 0) n = 22;
+  return { arc: n, yearUsed: todayYear };
 }
 
 const LV = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':1,'k':2,'l':3,'m':4,'n':5,'ñ':5,'o':6,'p':7,'q':8,'r':9,'s':1,'t':2,'u':3,'v':4,'w':5,'x':6,'y':7,'z':8};
