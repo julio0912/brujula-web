@@ -228,7 +228,7 @@ const ARCANOS = {
 const ARCH_SYM = {0:'○',1:'♂',2:'☽',3:'♃',4:'♄',5:'☿',6:'♀',7:'⊕',8:'♈',9:'♆',11:'☿',22:'♄',33:'♃',44:'♂'};
 
 const ND = {
-  ND[0] = {n:'El Umbral',sym:'○',
+  0:{n:'El Umbral',
   kws_mision:['Potencial puro','Entre dos mundos','Inicio absoluto','Vacío fértil','Todo es posible'],
   kws_alma:['Esencia sin forma','Origen','Silencio creador','Presencia sin definición','Lo que aún no es'],
   kws_ego:['Misterio proyectado','Presencia indefinible','Imagen que cambia','Difícil de categorizar','Fluido'],
@@ -254,7 +254,7 @@ const ND = {
   kws_person_ego:['Imagen cambiante','Difícil de categorizar','Fluido y adaptable','Muchas caras reales','Misterio genuino'],
   kws_person_don:['Apertura total','Empezar sin miedo','Adaptarse a cualquier forma','Potencial real','Presencia sin prejuicios'],
   kws_person_karma:['Identidad en proceso','Materializar pendiente','Potencial por aterrizar','Forma por elegir','Dirección en construcción']
-};
+},
   1:{n:'El Pionero',
     kws_mision:['Liderazgo','Autonomía','Iniciativa','Autoridad propia','Independencia'],
     kws_alma:['Fuego interior','Impulso creativo','Autosuficiencia','Visión pionera','Arranque'],
