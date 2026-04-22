@@ -657,28 +657,28 @@ function renderQuad(q){
         <div class="qcell" id="qa" onclick="clickCell('alma',${q.alma})">
           <span class="qv${M(q.alma)}">${q.alma}</span>
           <span class="qn">Número<br/>del Alma</span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.9px">TOCA EL NÚMERO</span>
         </div>
         <div class="qcell" id="qd" onclick="clickCell('don',${q.don})">
           <span class="qv${M(q.don)}">${q.don}</span>
           <span class="qn">Don<br/>Divino</span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.9px">TOCA EL NÚMERO</span>
         </div>
         <div class="qcell" id="qe" onclick="clickCell('ego',${q.ego})">
           <span class="qv${M(q.ego)}">${q.ego}</span>
           <span class="qn">Ego</span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.9px">TOCA EL NÚMERO</span>
         </div>
         <div class="qcell" id="qk" onclick="clickCell('karma',${q.karma})">
           <span class="qv${M(q.karma)}">${q.karma}</span>
           <span class="qn">Karma /<br/>Vida Pasada</span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.9px">TOCA EL NÚMERO</span>
         </div>
       </div>
       <div class="quad-mis" id="qm" onclick="clickCell('mision',${q.mision})">
         <span class="qv${M(q.mision)}">${q.mision}</span>
         <span class="qn">Misión<br/>de Vida<em>Toca para explorar</em></span>
-<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:1px">TOCA EL NÚMERO</span>
+<span style="font-size:9px;color:var(--sage);opacity:.7;display:block;margin-top:4px;letter-spacing:.9px">TOCA EL NÚMERO</span>
       </div>
     </div>`;
 }
